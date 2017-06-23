@@ -10,8 +10,8 @@ const zangSMS = require('./zang.js')
 const rekognition = new AWS.Rekognition({apiVersion: '2016-06-27'})
 const s3Bucket = new AWS.S3({params: {Bucket: '{AWS S3 bucket where live camera images are saved}'}})
 
-const image = {}
-const rekParams = {}
+let image = {}
+let rekParams = {}
 
 //NOTE: This fs.readFile part will probably change once I figure out how to connect live stream camera.
 
