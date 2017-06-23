@@ -1,4 +1,4 @@
-const zang = require('../zang-node/index.js')
+const zang = require('zang-node')
 const enums = zang.enums;
 
 const connector = new zang.Connectors({
